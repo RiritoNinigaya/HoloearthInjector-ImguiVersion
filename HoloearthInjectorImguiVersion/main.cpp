@@ -22,7 +22,7 @@ int main(int, char**)
 {
     // Create application window
     ImGui_ImplWin32_EnableDpiAwareness();
-    const WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(nullptr), nullptr, nullptr, nullptr, nullptr, _T("ImGui Standalone"), nullptr };
+    const WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, WndProc, 0L, 0L, GetModuleHandle(nullptr), nullptr, nullptr, nullptr, nullptr, _T("HoloearthInjector by RiritoNinigaya"), nullptr };
     ::RegisterClassEx(&wc);
     const HWND hwnd = ::CreateWindow(wc.lpszClassName, _T("Holoearth Injector"), WS_OVERLAPPEDWINDOW, 100, 100, 1400, 700, NULL, NULL, wc.hInstance, NULL);
     RECT rect;
